@@ -12,6 +12,8 @@ using PdfSharp.Drawing;
 using PdfSharp.Pdf;
 using PdfSharp.Pdf.IO;
 using System.Diagnostics;
+using WindowsFormsApplication2.Employee;
+using WindowsFormsApplication2.HR;
 
 namespace WindowsFormsApplication2
 {
@@ -29,11 +31,22 @@ namespace WindowsFormsApplication2
             ss.Show();
         }
 
-        private void reportGenButton_Click(object sender, EventArgs e)
+        private void pontajPropriuButton_Click(object sender, EventArgs e)
         {
-           
-            Requests r = new Requests();
-            r.Show();
+            Pontaj pontajPropriu = new Pontaj();
+            pontajPropriu.Show();
+        }
+
+        private void pontajColectivButton_Click(object sender, EventArgs e)
+        {
+            PontajColectiv pontajColectiv = new PontajColectiv();
+            pontajColectiv.Show();
+        }
+
+        private void alerteButton_Click(object sender, EventArgs e)
+        {
+            TrimiteAlerte ta = new TrimiteAlerte();
+            ta.Show();
         }
     }
 }

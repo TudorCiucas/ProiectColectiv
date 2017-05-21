@@ -29,11 +29,9 @@
         private void InitializeComponent()
         {
             this.logoutButton = new System.Windows.Forms.Button();
-            this.reportGenButton = new System.Windows.Forms.Button();
-            this.pontajAngajatiButton = new System.Windows.Forms.Button();
-            this.requestsButton = new System.Windows.Forms.Button();
-            this.alertButton = new System.Windows.Forms.Button();
-            this.historyButton = new System.Windows.Forms.Button();
+            this.pontajColectivButton = new System.Windows.Forms.Button();
+            this.pontajPropriuButton = new System.Windows.Forms.Button();
+            this.alerteButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // logoutButton
@@ -46,62 +44,44 @@
             this.logoutButton.UseVisualStyleBackColor = true;
             this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
-            // reportGenButton
+            // pontajColectivButton
             // 
-            this.reportGenButton.Location = new System.Drawing.Point(92, 97);
-            this.reportGenButton.Name = "reportGenButton";
-            this.reportGenButton.Size = new System.Drawing.Size(111, 23);
-            this.reportGenButton.TabIndex = 1;
-            this.reportGenButton.Text = "Generare Raport";
-            this.reportGenButton.UseVisualStyleBackColor = true;
-            this.reportGenButton.Click += new System.EventHandler(this.reportGenButton_Click);
+            this.pontajColectivButton.Location = new System.Drawing.Point(92, 49);
+            this.pontajColectivButton.Name = "pontajColectivButton";
+            this.pontajColectivButton.Size = new System.Drawing.Size(111, 23);
+            this.pontajColectivButton.TabIndex = 2;
+            this.pontajColectivButton.Text = "Pontaj Coelctiv";
+            this.pontajColectivButton.UseVisualStyleBackColor = true;
+            this.pontajColectivButton.Click += new System.EventHandler(this.pontajColectivButton_Click);
             // 
-            // pontajAngajatiButton
+            // pontajPropriuButton
             // 
-            this.pontajAngajatiButton.Location = new System.Drawing.Point(92, 55);
-            this.pontajAngajatiButton.Name = "pontajAngajatiButton";
-            this.pontajAngajatiButton.Size = new System.Drawing.Size(111, 23);
-            this.pontajAngajatiButton.TabIndex = 2;
-            this.pontajAngajatiButton.Text = "Pontaj Angajati";
-            this.pontajAngajatiButton.UseVisualStyleBackColor = true;
+            this.pontajPropriuButton.Location = new System.Drawing.Point(92, 12);
+            this.pontajPropriuButton.Name = "pontajPropriuButton";
+            this.pontajPropriuButton.Size = new System.Drawing.Size(111, 23);
+            this.pontajPropriuButton.TabIndex = 3;
+            this.pontajPropriuButton.Text = "Pontaj Propriu";
+            this.pontajPropriuButton.UseVisualStyleBackColor = true;
+            this.pontajPropriuButton.Click += new System.EventHandler(this.pontajPropriuButton_Click);
             // 
-            // requestsButton
+            // alerteButton
             // 
-            this.requestsButton.Location = new System.Drawing.Point(92, 12);
-            this.requestsButton.Name = "requestsButton";
-            this.requestsButton.Size = new System.Drawing.Size(111, 23);
-            this.requestsButton.TabIndex = 3;
-            this.requestsButton.Text = "Vizualizare Cereri";
-            this.requestsButton.UseVisualStyleBackColor = true;
-            // 
-            // alertButton
-            // 
-            this.alertButton.Location = new System.Drawing.Point(92, 140);
-            this.alertButton.Name = "alertButton";
-            this.alertButton.Size = new System.Drawing.Size(111, 23);
-            this.alertButton.TabIndex = 4;
-            this.alertButton.Text = "Alerta";
-            this.alertButton.UseVisualStyleBackColor = true;
-            // 
-            // historyButton
-            // 
-            this.historyButton.Location = new System.Drawing.Point(92, 181);
-            this.historyButton.Name = "historyButton";
-            this.historyButton.Size = new System.Drawing.Size(111, 23);
-            this.historyButton.TabIndex = 5;
-            this.historyButton.Text = "Istoric";
-            this.historyButton.UseVisualStyleBackColor = true;
+            this.alerteButton.Location = new System.Drawing.Point(92, 87);
+            this.alerteButton.Name = "alerteButton";
+            this.alerteButton.Size = new System.Drawing.Size(111, 23);
+            this.alerteButton.TabIndex = 4;
+            this.alerteButton.Text = "Alerte";
+            this.alerteButton.UseVisualStyleBackColor = true;
+            this.alerteButton.Click += new System.EventHandler(this.alerteButton_Click);
             // 
             // HRForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.historyButton);
-            this.Controls.Add(this.alertButton);
-            this.Controls.Add(this.requestsButton);
-            this.Controls.Add(this.pontajAngajatiButton);
-            this.Controls.Add(this.reportGenButton);
+            this.Controls.Add(this.alerteButton);
+            this.Controls.Add(this.pontajPropriuButton);
+            this.Controls.Add(this.pontajColectivButton);
             this.Controls.Add(this.logoutButton);
             this.Name = "HRForm";
             this.Text = "HRForm";
@@ -112,10 +92,8 @@
         #endregion
 
         private System.Windows.Forms.Button logoutButton;
-        private System.Windows.Forms.Button reportGenButton;
-        private System.Windows.Forms.Button pontajAngajatiButton;
-        private System.Windows.Forms.Button requestsButton;
-        private System.Windows.Forms.Button alertButton;
-        private System.Windows.Forms.Button historyButton;
+        private System.Windows.Forms.Button pontajColectivButton;
+        private System.Windows.Forms.Button pontajPropriuButton;
+        private System.Windows.Forms.Button alerteButton;
     }
 }

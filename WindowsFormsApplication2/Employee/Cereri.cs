@@ -13,11 +13,17 @@ namespace WindowsFormsApplication2.Employee
 {
     public partial class Cereri : Form
     {
+        private String employeeName;
         public Cereri()
         {
             InitializeComponent();
         }
 
+        public Cereri(String employeeName)
+        {
+            this.employeeName = employeeName;
+            InitializeComponent();
+        }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 

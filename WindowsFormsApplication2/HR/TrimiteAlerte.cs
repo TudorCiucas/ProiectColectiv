@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication2
+namespace WindowsFormsApplication2.HR
 {
-    public partial class History : Form
+    public partial class TrimiteAlerte : Form
     {
-        public History()
+        public TrimiteAlerte()
         {
             InitializeComponent();
+        }
+
+        private void sendButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

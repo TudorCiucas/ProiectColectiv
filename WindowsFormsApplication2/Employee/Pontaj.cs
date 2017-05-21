@@ -8,13 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication2
+namespace WindowsFormsApplication2.Employee
 {
     public partial class Pontaj : Form
     {
         public Pontaj()
         {
             InitializeComponent();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void finishButton_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

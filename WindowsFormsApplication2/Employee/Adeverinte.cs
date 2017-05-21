@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,7 +27,11 @@ namespace WindowsFormsApplication2.Employee
         {
             if (checkedListBox1.Text == "Adeverinta medicala")
             {
+                using (StreamReader sr = new StreamReader("AdeverintaMedicalaTemplata.txt"))
+                {
+                    String file = sr.ReadToEnd();
 
+                }
             }
         }
     }

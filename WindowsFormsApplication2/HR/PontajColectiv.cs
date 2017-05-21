@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication2
+namespace WindowsFormsApplication2.HR
 {
-    public partial class ReportsGenerator : Form
+    public partial class PontajColectiv : Form
     {
-        public ReportsGenerator()
+        public PontajColectiv()
         {
             InitializeComponent();
         }

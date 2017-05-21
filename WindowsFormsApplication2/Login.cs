@@ -79,7 +79,7 @@ namespace WindowsFormsApplication2
                 if (dt.Rows[0][0].ToString() == "1")
                 {
                     this.Hide();
-                    EmployeeForm ss = new EmployeeForm();
+                    EmployeeForm ss = new EmployeeForm(userField.Text);
                     ss.Show();
                 }
 

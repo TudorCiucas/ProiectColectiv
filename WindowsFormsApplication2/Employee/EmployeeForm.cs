@@ -13,8 +13,15 @@ namespace WindowsFormsApplication2
 {
     public partial class EmployeeForm : Form
     {
+        private String name;
         public EmployeeForm()
         {
+            InitializeComponent();
+        }
+
+        public EmployeeForm(String name)
+        {
+            this.name = name;
             InitializeComponent();
         }
 
@@ -27,8 +34,13 @@ namespace WindowsFormsApplication2
 
         private void requestButton_Click(object sender, EventArgs e)
         {
-            Cereri c = new Cereri();
+            Cereri c = new Cereri(name);
             c.Show();
+        }
+
+        private void pontajButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -30,6 +30,7 @@
         {
             this.logoutButton = new System.Windows.Forms.Button();
             this.requestButton = new System.Windows.Forms.Button();
+            this.pontajButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // logoutButton
@@ -52,11 +53,22 @@
             this.requestButton.UseVisualStyleBackColor = true;
             this.requestButton.Click += new System.EventHandler(this.requestButton_Click);
             // 
+            // pontajButton
+            // 
+            this.pontajButton.Location = new System.Drawing.Point(117, 134);
+            this.pontajButton.Name = "pontajButton";
+            this.pontajButton.Size = new System.Drawing.Size(75, 23);
+            this.pontajButton.TabIndex = 4;
+            this.pontajButton.Text = "Pontaj";
+            this.pontajButton.UseVisualStyleBackColor = true;
+            this.pontajButton.Click += new System.EventHandler(this.pontajButton_Click);
+            // 
             // EmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.pontajButton);
             this.Controls.Add(this.requestButton);
             this.Controls.Add(this.logoutButton);
             this.Name = "EmployeeForm";
@@ -69,5 +81,6 @@
 
         private System.Windows.Forms.Button logoutButton;
         private System.Windows.Forms.Button requestButton;
+        private System.Windows.Forms.Button pontajButton;
     }
 }

@@ -90,17 +90,17 @@
     <Compile Include="Employee\EmployeeForm.Designer.cs">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee\Pontaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\Pontaj.Designer.cs">
+      <DependentUpon>Pontaj.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HR\History.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HR\History.Designer.cs">
-      <DependentUpon>History.cs</DependentUpon>
     </Compile>
     <Compile Include="HR\HRForm.cs">
       <SubType>Form</SubType>
@@ -108,23 +108,23 @@
     <Compile Include="HR\HRForm.Designer.cs">
       <DependentUpon>HRForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="HR\Pontaj.cs">
+    <Compile Include="HR\PontajColectiv.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HR\Pontaj.Designer.cs">
-      <DependentUpon>Pontaj.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HR\ReportsGenerator.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HR\ReportsGenerator.Designer.cs">
-      <DependentUpon>ReportsGenerator.cs</DependentUpon>
+    <Compile Include="HR\PontajColectiv.Designer.cs">
+      <DependentUpon>PontajColectiv.cs</DependentUpon>
     </Compile>
     <Compile Include="HR\Requests.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HR\Requests.Designer.cs">
       <DependentUpon>Requests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR\TrimiteAlerte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\TrimiteAlerte.Designer.cs">
+      <DependentUpon>TrimiteAlerte.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -159,11 +159,20 @@
     <EmbeddedResource Include="Employee\EmployeeForm.resx">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Employee\Pontaj.resx">
+      <DependentUpon>Pontaj.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HR\HRForm.resx">
       <DependentUpon>HRForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HR\PontajColectiv.resx">
+      <DependentUpon>PontajColectiv.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HR\Requests.resx">
       <DependentUpon>Requests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\TrimiteAlerte.resx">
+      <DependentUpon>TrimiteAlerte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
