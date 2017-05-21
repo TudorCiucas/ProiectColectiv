@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,11 +16,15 @@ namespace WindowsFormsApplication2.HR
         public TrimiteAlerte()
         {
             InitializeComponent();
+            SqlConnection con = new SqlConnection(@"Data Source=TUDOR;Initial Catalog=LoginData;Integrated Security=True");
+            SqlDataAdapter sda = new SqlDataAdapter("Select FirstName LastName From Employee", con);
+            
         }
 
         private void sendButton_Click(object sender, EventArgs e)
         {
 
         }
+        
     }
 }
