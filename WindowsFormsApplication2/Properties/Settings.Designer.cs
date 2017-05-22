@@ -32,5 +32,15 @@ namespace WindowsFormsApplication2.Properties {
                 return ((string)(this["LoginDataConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=TUDOR;Initial Catalog=example;Integrated Security=True")]
+        public string exampleConnectionString {
+            get {
+                return ((string)(this["exampleConnectionString"]));
+            }
+        }
     }
 }

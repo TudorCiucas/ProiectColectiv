@@ -132,11 +132,6 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginDataDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LoginDataDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="LoginDataDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -186,17 +181,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="LoginDataDataSet.xsc">
-      <DependentUpon>LoginDataDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="LoginDataDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>LoginDataDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="LoginDataDataSet.xss">
-      <DependentUpon>LoginDataDataSet.xsd</DependentUpon>
-    </None>
+    <None Include="ClassDiagram1.cd" />
     <None Include="LoginDataDataSet1.xsc">
       <DependentUpon>LoginDataDataSet1.xsd</DependentUpon>
     </None>

@@ -78,7 +78,6 @@ namespace WindowsFormsApplication2
                 }
             }
                 con.Close();
-            this.employeeTableAdapter.Fill(this.loginDataDataSet11.Employee);
         }
         
 
@@ -95,7 +94,7 @@ namespace WindowsFormsApplication2
         private void UserManagement_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'loginDataDataSet11.Employee' table. You can move, or remove it, as needed.
-            this.employeeTableAdapter.Fill(this.loginDataDataSet11.Employee);
+            //this.employeeTableAdapter.Fill(this.loginDataDataSet11.Employee);
             // TODO: This line of code loads data into the 'loginDataDataSet1.Employee' table. You can move, or remove it, as needed.
             //this.employeeTableAdapter1.Fill(this.loginDataDataSet1.Employee);
 
@@ -126,7 +125,6 @@ namespace WindowsFormsApplication2
                 MessageBox.Show("Employee modification succesfull! ");
             }
             con.Close();
-            this.employeeTableAdapter.Fill(this.loginDataDataSet11.Employee);
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
@@ -144,7 +142,6 @@ namespace WindowsFormsApplication2
                 MessageBox.Show("Employee deletion succesfull! ");
             }
             con.Close();
-            this.employeeTableAdapter.Fill(this.loginDataDataSet11.Employee);
         }
     }
 }

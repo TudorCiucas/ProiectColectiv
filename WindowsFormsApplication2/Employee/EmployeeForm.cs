@@ -40,7 +40,7 @@ namespace WindowsFormsApplication2
 
         private void pontajButton_Click(object sender, EventArgs e)
         {
-            Pontaj p = new Pontaj();
+            Pontaj p = new Pontaj(name);
             p.Show();
         }
     }

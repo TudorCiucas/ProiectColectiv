@@ -19,8 +19,15 @@ namespace WindowsFormsApplication2
 {
     public partial class HRForm : Form
     {
+        private String nume;
         public HRForm()
         {
+            InitializeComponent();
+        }
+
+        public HRForm(String nume)
+        {
+            this.nume = nume;
             InitializeComponent();
         }
 
@@ -33,7 +40,7 @@ namespace WindowsFormsApplication2
 
         private void pontajPropriuButton_Click(object sender, EventArgs e)
         {
-            Pontaj pontajPropriu = new Pontaj();
+            Pontaj pontajPropriu = new Pontaj(nume);
             pontajPropriu.Show();
         }
 
